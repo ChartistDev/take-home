@@ -15,7 +15,7 @@ class DataSet extends Component {
       <div className="dataset-container">
         <select value={this.state.value} onChange={this.handleSelect}>
           <option value="Bank">Bank</option>
-          <option value="Ecommerce">Ecommerce</option>
+          {/* <option value="Ecommerce">Ecommerce</option> */}
         </select>
       </div>
     );

@@ -33,7 +33,7 @@ code {
   margin: 20px;
   justify-content: space-between;
   flex-flow: row wrap;
-  background-color: lightgray;
+  background-color: #60a3bc;
   padding: 10px;
 }
 
@@ -48,7 +48,8 @@ code {
   width: 100%;
   height: 40px;
   display: flex;
-  background-color: #000;
+  background-color: #60a3bc;
+  border-bottom: 1px solid thistle;
   border-radius: 10px 10px 0px 0px;
 }
 .column-header-container span {
@@ -63,7 +64,7 @@ code {
   padding-top: 5px;
 }
 .content-row-header {
-  background-color: #000;
+  background-color: #60a3bc;
   color: whitesmoke;
   font-size: 15px;
   font-weight: 500;
@@ -85,6 +86,7 @@ code {
 .grid-cell {
   font-size: 12px;
   text-align: center;
+  font-weight: 500;
   padding-left: 2px;
   width: 120px;
   height: 50px;
@@ -104,7 +106,7 @@ code {
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-direction: row;
+  flex-flow: row wrap;
   height: 40px;
   margin-top: 10px;
 }
@@ -126,12 +128,17 @@ code {
 }
 
 .nav-list-container a {
-  color: red;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+}
+
+.nav-list-container a:hover {
+  color: #ffffff;
+  transition: all 0.4s ease 0s;
 }
 .nav-list-container .active {
-  color: green;
+  color: #ffffff;
 }
 
 .dataset-container {
@@ -144,4 +151,24 @@ code {
 .dataset-container select {
   height: 40px;
   width: 100%;
+}
+.cell-spanNegative {
+  color: red;
+}
+.cell-spanPositive {
+  color: rgba(6, 138, 56, 0.5);
+}
+.page-btn {
+  background-color: #60a3bc;
+  cursor: pointer;
+  color: aliceblue;
+  border-radius: 1px 1px 1px 1px;
+  width: 50px;
+}
+.page-btn:hover {
+  background-color: rgb(46, 120, 155);
+}
+
+.buttons-container .active {
+  background-color: rgb(46, 120, 155);
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import GridContent from "./GridContent";
 import DisplayList from "../utils/paginationDisplay";
 import ButtonsContainer from "./ButtonsContainer";
+import capitalize from "../utils/capitalize";
 class TakeHomeGrid extends Component {
   state = {
     currentPage: 1,
@@ -23,9 +24,11 @@ class TakeHomeGrid extends Component {
     });
     const headerCells = contentColumnHeaders.map((header) => {
       let headerStr = header.split("_");
-      headerStr = `${headerStr[headerStr.length - 1]} ${
-        headerStr[headerStr.length - 2]
-      }`;
+      headerStr = capitalize(
+        `${headerStr[headerStr.length - 2]} ${headerStr[headerStr.length - 1]}`,
+        " "
+      );
+
       return (
         <div className="column-header-content" key={header}>
           <span>{headerStr}</span>

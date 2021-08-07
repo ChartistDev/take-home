@@ -75,21 +75,6 @@ class App extends Component {
           currentNavigation: this.getNavigations(responseData)[0],
         });
       });
-
-    // fetch("https://mocki.io/v1/f8e89695-6f41-4e1c-b5e4-bfd9d7ddffa4")
-    //   .then((response) => response.json())
-    //   .then((responseData) => {
-    //     this.setState({
-    //       ecomData: responseData,
-    //       currentDataSet: "Bank",
-    //       currentData: this.getCurrentData(
-    //         responseData,
-    //         this.state.currentNavigation
-    //       ),
-    //       navigations: this.getNavigations(responseData),
-    //       currentNavigation: this.state.navigations[0],
-    //     });
-    //   });
   }
 
   getCurrentData = (data, currnav) => {
@@ -112,8 +97,6 @@ class App extends Component {
       this.state.data,
       this.state.currentNavigation
     );
-    console.log(currentData);
-    console.log(this.state.navigations);
     const GridNav = this.state.navigations.map((navigation) => {
       return (
         <Route path={`/${navigation}`} key={navigation}>

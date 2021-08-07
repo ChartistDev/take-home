@@ -9,7 +9,11 @@ const ButtonsContainer = ({
   let buttons = [];
   for (let i = 1; i < pageCount + 1; i++) {
     buttons.push(
-      <button className="page-btn" onClick={handleBtnClick} key={i}>
+      <button
+        className={i === +currentPage ? "page-btn active" : "page-btn"}
+        onClick={handleBtnClick}
+        key={i}
+      >
         {i}
       </button>
     );
