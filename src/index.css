@@ -1,0 +1,147 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  width: inherit;
+  height: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  width: inherit;
+  height: inherit;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  /*background-color: bisque;*/
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav-container {
+  height: 60px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.grid-container {
+  width: 94%;
+  height: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.column-header-container {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background-color: #000;
+  border-radius: 10px 10px 0px 0px;
+}
+.column-header-container span {
+  font-size: 15px;
+  color: whitesmoke;
+}
+.subgroup-header {
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  padding-left: 2px;
+  padding-top: 5px;
+}
+.content-row-header {
+  background-color: #000;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 500;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  padding-left: 2px;
+}
+
+.column-header,
+.cell-header {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.column-header-content,
+.grid-cell {
+  font-size: 12px;
+  text-align: center;
+  padding-left: 2px;
+  width: 120px;
+  height: 50px;
+}
+
+.content-row {
+  display: flex;
+  height: 57px;
+  flex-direction: row;
+  border-bottom: 1px solid thistle;
+}
+.content-container {
+  width: 100%;
+  height: 350px;
+}
+.buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.nav-container {
+  width: 300px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.nav-list-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.nav-list-container a {
+  color: red;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-list-container .active {
+  color: green;
+}
+
+.dataset-container {
+  width: 100px;
+  height: 40px;
+  background-color: lawngreen;
+  cursor: pointer;
+}
+
+.dataset-container select {
+  height: 40px;
+  width: 100%;
+}
