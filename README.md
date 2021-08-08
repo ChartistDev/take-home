@@ -7,7 +7,7 @@ To Start the project:
 1. Copy url from Github
 2. navigate to folder where you want to have the project.
 3. Open cmd(or Gitbash)
-4. Paste the url
+4. git clone "Paste the url"
 5. run command "npm i" to load dependencies
 6. run command "npm start" to start project.
 
